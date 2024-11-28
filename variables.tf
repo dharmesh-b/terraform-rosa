@@ -28,7 +28,7 @@ variable "aws_billing_account_id" {
 variable "region" {
   description = "The AWS region to provision a ROSA cluster and required components into."
   type        = string
-  default     = "us-east-1"
+  default     = "ap-south-1"
 }
 
 variable "multi_az" {
