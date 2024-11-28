@@ -115,7 +115,7 @@ resource "rhcs_cluster_rosa_hcp" "rosa" {
   # aws
   cloud_region           = var.region
   aws_account_id         = data.aws_caller_identity.current.account_id
-  aws_billing_account_id = var.aws_billing_account_id != null ? var.aws_billing_account_id : data.aws_caller_identity.current.account_id
+  aws_billing_account_id = var.aws_billing_account_id
   tags                   = var.tags
 
   # NOTE: we are only deriving this because we use the rhcs_hcp_machine_pool.default resource to manage our
