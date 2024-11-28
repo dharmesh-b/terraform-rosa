@@ -165,3 +165,10 @@ variable "compute_machine_type" {
   type        = string
   default     = "m5.xlarge"
 }
+variable "aws_billing_account_id" {
+  description = <<EOF
+  AWS Billing id
+  EOF
+  type        = string
+  default     = "993001391547"
+}
